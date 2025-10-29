@@ -193,5 +193,3 @@ const EventDetailsPage = async ({ params }: { params: Promise<{ slug: string }> 
     </section>
   );
 };
-
-export default EventDetailsPage;
