@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 
 import { getSimilarEventsBySlug } from "@/actions/event.actions";
 import { IEvent } from "@/database";
-import { title } from "process";
 
 import BookEvent from "@/components/BookEvent";
 import EventCard from "@/components/EventCard";
@@ -84,6 +83,7 @@ const EventDetailsPage = async ({ params }: { params: Promise<{ slug: string }> 
   }
 
   const {
+    title,
     description,
     image,
     overview,
@@ -193,3 +193,5 @@ const EventDetailsPage = async ({ params }: { params: Promise<{ slug: string }> 
     </section>
   );
 };
+
+export default EventDetailsPage;
